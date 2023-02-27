@@ -1,0 +1,127 @@
+/* Default styles */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  grid-template-rows: 100vh;
+}
+
+.left {
+  background-color: #292929;
+  padding: 20px;
+  position: static;
+}
+
+.left .top-left {
+  height: 50%;
+}
+
+.left .top-left button {
+  padding: 10px;
+  font-size: 14px;
+  text-align: left;
+  height: 40px;
+  width: 90%;
+  margin: 5px;
+  color: aliceblue;
+  background-color: #292929;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 5px;
+}
+
+.left .top-left button:hover {
+  background-color: #363636;
+}
+
+.left .bottom-left {
+  display: grid;
+}
+
+.left .bottom-left button {
+  font-size: 14px;
+  text-align: left;
+  height: 30px;
+  margin: 5px;
+  color: aliceblue;
+  background-color: #292929;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 5px;
+}
+
+.left .bottom-left button:hover {
+  background-color: #363636;
+}
+
+.right {
+  background-color: rgba(52, 53, 65);
+  padding: 20px;
+}
+
+.right main {
+  height: 80%;
+}
+
+.right nav {
+  height: 10%;
+}
+
+.right footer {
+  height: 10%;
+  color: wheat;
+  font-size: 12px;
+  text-align: center;
+}
+
+.right nav input {
+  margin-left: 20%;
+  background-image: url(chatgpt.png);
+  background-size: 25px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 60%;
+  padding: 15px 30px;
+  color: wheat;
+  height: 4vh;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  background-color: rgb(62, 62, 77);
+  border-radius: 5px;
+}
+
+.right nav input:focus {
+  outline: none;
+}
+
+/* Media styles for phones */
+
+@media (max-width: 767px) {
+  .left {
+    padding: 10px;
+  }
+  
+  .left .top-left button {
+    font-size: 18px;
+    height: 50px;
+    margin: 10px;
+  }
+
+  .left .bottom-left button {
+    font-size: 36px;
+    height: 80px;
+    margin: 10px;
+  }
+
+  .right nav input {
+    margin-left: 10%;
+    background-size: 20px;
+    padding: 10px 20px;
+    height: 50px;
+  }
+}
